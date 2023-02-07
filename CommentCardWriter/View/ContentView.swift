@@ -13,6 +13,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                NavigationLink(destination: CommentCardView()) {Text("View Comment")}
                 List {
                     Section {
                         Text("In Div Attainment Level")

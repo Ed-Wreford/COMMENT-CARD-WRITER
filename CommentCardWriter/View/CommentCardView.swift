@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CommentCardView: View {
     var body: some View {
-        Text("Test")
+        Text("Student Comment Here")
     }
 }
 
