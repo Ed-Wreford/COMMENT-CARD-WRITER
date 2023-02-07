@@ -34,6 +34,7 @@ struct ContentView: View {
                         Toggle("Bad", isOn: $toggleEnabled)
                         
                     }
+                    
                 }
                 .navigationTitle("STUDENT NAME")
                 .navigationBarTitleDisplayMode(.inline)
@@ -49,6 +50,7 @@ struct ContentView: View {
                         }
                     }
                 }
+                Button("GENERATE COMMENT", action: {})
             }
         }
     }
