@@ -15,25 +15,19 @@ struct ContentView: View {
             VStack {
                 NavigationLink(destination: CommentCardView()) {Text("View Comment")}
                 List {
-                    Section {
-                        Text("In Div Attainment Level")
-                            .font(.headline)
+                    Section(header: Text("Class Attainment")) {
                         Toggle("Amazing", isOn: $toggleEnabled)
                         Toggle("Good", isOn: $toggleEnabled)
                         Toggle("Average", isOn: $toggleEnabled)
                         Toggle("Bad", isOn: $toggleEnabled)
                     }
-                    Section {
-                        Text("Effort Level")
-                            .font(.headline)
+                    Section(header: Text("Effort Level")) {
                         Toggle("Amazing", isOn: $toggleEnabled)
                         Toggle("Good", isOn: $toggleEnabled)
                         Toggle("Average", isOn: $toggleEnabled)
                         Toggle("Bad", isOn: $toggleEnabled)
                     }
-                    Section {
-                        Text("EW Level")
-                            .font(.headline)
+                    Section(header: Text("EW Level")) {
                         Toggle("Amazing", isOn: $toggleEnabled)
                         Toggle("Good", isOn: $toggleEnabled)
                         Toggle("Average", isOn: $toggleEnabled)
