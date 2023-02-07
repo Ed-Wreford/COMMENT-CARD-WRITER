@@ -12,20 +12,46 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List() {
-                Toggle("Very good", isOn: $toggleEnabled)
-            }
-            .navigationTitle("STUDENT NAME")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {} ) {
-                        Image(systemName: "arrow.backward")
+            VStack {
+                List {
+                    Section {
+                        Text("In Div Attainment Level")
+                            .font(.headline)
+                        Toggle("Amazing", isOn: $toggleEnabled)
+                        Toggle("Good", isOn: $toggleEnabled)
+                        Toggle("Average", isOn: $toggleEnabled)
+                        Toggle("Bad", isOn: $toggleEnabled)
+                    }
+                    Section {
+                        Text("Effort Level")
+                            .font(.headline)
+                        Toggle("Amazing", isOn: $toggleEnabled)
+                        Toggle("Good", isOn: $toggleEnabled)
+                        Toggle("Average", isOn: $toggleEnabled)
+                        Toggle("Bad", isOn: $toggleEnabled)
+                    }
+                    Section {
+                        Text("EW Level")
+                            .font(.headline)
+                        Toggle("Amazing", isOn: $toggleEnabled)
+                        Toggle("Good", isOn: $toggleEnabled)
+                        Toggle("Average", isOn: $toggleEnabled)
+                        Toggle("Bad", isOn: $toggleEnabled)
+                        
                     }
                 }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {} ) {
-                        Image(systemName: "arrow.forward")
+                .navigationTitle("STUDENT NAME")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button(action: {} ) {
+                            Image(systemName: "arrow.backward")
+                        }
+                    }
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button(action: {} ) {
+                            Image(systemName: "arrow.forward")
+                        }
                     }
                 }
             }
