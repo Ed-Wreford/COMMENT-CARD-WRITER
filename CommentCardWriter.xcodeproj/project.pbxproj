@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58D5082E299269DA00EE3A96 /* CommentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D5082D299269DA00EE3A96 /* CommentCardView.swift */; };
+		58D5082F299269DA00EE3A96 /* CommentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D5082D299269DA00EE3A96 /* CommentCardView.swift */; };
 		58F392B629925B1D00965A6E /* CommentCardWriterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F392B529925B1D00965A6E /* CommentCardWriterApp.swift */; };
 		58F392B829925B1D00965A6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F392B729925B1D00965A6E /* ContentView.swift */; };
 		58F392BA29925B2000965A6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F392B929925B2000965A6E /* Assets.xcassets */; };
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		58D5082D299269DA00EE3A96 /* CommentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardView.swift; sourceTree = "<group>"; };
 		58F392B229925B1D00965A6E /* CommentCardWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommentCardWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F392B529925B1D00965A6E /* CommentCardWriterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterApp.swift; sourceTree = "<group>"; };
 		58F392B729925B1D00965A6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				58F392B729925B1D00965A6E /* ContentView.swift */,
+				58D5082D299269DA00EE3A96 /* CommentCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58F392B829925B1D00965A6E /* ContentView.swift in Sources */,
+				58D5082E299269DA00EE3A96 /* CommentCardView.swift in Sources */,
 				58F392B629925B1D00965A6E /* CommentCardWriterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58D5082F299269DA00EE3A96 /* CommentCardView.swift in Sources */,
 				58F392C729925B2100965A6E /* CommentCardWriterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
