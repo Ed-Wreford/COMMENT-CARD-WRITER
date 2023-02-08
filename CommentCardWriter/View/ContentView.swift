@@ -20,21 +20,21 @@ struct ContentView: View {
                 NavigationLink(destination: CommentCardView()) {Text("View Comment")}
                 List {
                     Section(header: Text("Class Attainment")) {
-                        Picker("Please choose a color", selection: $selectedAchievement) {
+                        Picker("Please choose a grade", selection: $selectedAchievement) {
                             ForEach(achievement, id: \.self) {
                                 Text($0)
                             }
                         }
                     }
                     Section(header: Text("Effort Level")) {
-                        Picker("Please choose a color", selection: $selectedAchievement) {
+                        Picker("Please choose a grade", selection: $selectedAchievement) {
                             ForEach(achievement, id: \.self) {
                                 Text($0)
                             }
                         }
                     }
                     Section(header: Text("EW Level")) {
-                        Picker("Please choose a color", selection: $selectedAchievement) {
+                        Picker("Please choose a grade", selection: $selectedAchievement) {
                             ForEach(achievement, id: \.self) {
                                 Text($0)
                             }
