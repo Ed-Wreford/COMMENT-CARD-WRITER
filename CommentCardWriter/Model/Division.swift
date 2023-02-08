@@ -11,4 +11,10 @@ class Students {
     
     var name: String
     
+    init(self.name) {
+        
+        self.name = name
+        
+    }
+    
 }
