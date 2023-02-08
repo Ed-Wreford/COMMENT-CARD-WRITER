@@ -41,7 +41,9 @@ struct ContentView: View {
                         }
                         
                     }
-                    
+                    Image("Eton-College-Portfolio-Image")
+                                .resizable()
+                                .scaledToFit()
                 }
                 .navigationTitle("STUDENT NAME")
                 .navigationBarTitleDisplayMode(.inline)
