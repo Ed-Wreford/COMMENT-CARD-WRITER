@@ -7,14 +7,8 @@
 
 import Foundation
 
-class Students {
+class Student {
     
-    var name: String
     
-    init(self.name) {
-        
-        self.name = name
-        
-    }
     
 }

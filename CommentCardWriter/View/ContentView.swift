@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    var achievement = ["Amazing", "Good", "Average", "Bad"]
-    @State private var selectedAchievement = "Amazing"
+    var achievement1 = ["Amazing", "Good", "Average", "Bad"]
+    @State private var selectedAchievement1 = "Amazing"
     
+    var achievement2 = ["Amazing", "Good", "Average", "Bad"]
+    @State private var selectedAchievement2 = "Amazing"
+    
+    var achievement3 = ["Amazing", "Good", "Average", "Bad"]
+    @State private var selectedAchievement3 = "Amazing"
     
     
     var body: some View {
@@ -20,22 +25,22 @@ struct ContentView: View {
                 NavigationLink(destination: CommentCardView()) {Text("View Comment")}
                 List {
                     Section(header: Text("Class Attainment")) {
-                        Picker("Please choose a grade", selection: $selectedAchievement) {
-                            ForEach(achievement, id: \.self) {
+                        Picker("Please choose a grade", selection: $selectedAchievement1) {
+                            ForEach(achievement1, id: \.self) {
                                 Text($0)
                             }
                         }
                     }
                     Section(header: Text("Effort Level")) {
-                        Picker("Please choose a grade", selection: $selectedAchievement) {
-                            ForEach(achievement, id: \.self) {
+                        Picker("Please choose a grade", selection: $selectedAchievement2) {
+                            ForEach(achievement2, id: \.self) {
                                 Text($0)
                             }
                         }
                     }
                     Section(header: Text("EW Level")) {
-                        Picker("Please choose a grade", selection: $selectedAchievement) {
-                            ForEach(achievement, id: \.self) {
+                        Picker("Please choose a grade", selection: $selectedAchievement3) {
+                            ForEach(achievement3, id: \.self) {
                                 Text($0)
                             }
                         }
