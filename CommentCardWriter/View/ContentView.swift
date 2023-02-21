@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let division = Division.example
+    
+    
     var achievement1 = ["Amazing", "Good", "Average", "Bad"]
     @State private var selectedAchievement1 = "Amazing"
     
@@ -50,7 +54,7 @@ struct ContentView: View {
                                 .resizable()
                                 .scaledToFit()
                 }
-                .navigationTitle("STUDENT NAME")
+                .navigationTitle("\(division.students)")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
