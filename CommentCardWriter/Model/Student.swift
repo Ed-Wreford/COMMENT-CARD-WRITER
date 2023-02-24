@@ -7,19 +7,18 @@
 
 import Foundation
 
-class Student: ObservableObject {
+struct Student {
     
     var name: String
-    var house: String
     
-    init(name: String, house: String) {
+    func displayStats() -> String {
         
-        self.name = name
-        self.house = house
-        
+        return"""
+            Name: \(name)
+            """
+                
+            
+
     }
     
-    #if DEBUG
-    static let example = Student(name: "Ed", house: "DWBA")
-    #endif
 }

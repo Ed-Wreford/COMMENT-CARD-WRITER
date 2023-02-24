@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var division = Division()
     
-    let division = Division.example
+    @State private var selectedName: Int = 0 {
+            
+            didSet {
+                if selectedName >= division.students.count {
+                    selectedName  = 0
+                }
+            }
+        }
     
     
     var achievement1 = ["Amazing", "Good", "Average", "Bad"]
@@ -54,16 +62,20 @@ struct ContentView: View {
                                 .resizable()
                                 .scaledToFit()
                 }
-                .navigationTitle("\(division.students)")
+                .navigationTitle("\(division.students[0].displayStats())")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
-                        Button(action: {} ) {
+                        Button(action: { selectedName += 1
+                            resetDisplay()
+                            
+                        }) {
                             Image(systemName: "arrow.backward")
                         }
                     }
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        Button(action: {} ) {
+                        Button(action: { selectedName -= 1
+                            resetDisplay() } ) {
                             Image(systemName: "arrow.forward")
                         }
                     }
@@ -72,6 +84,15 @@ struct ContentView: View {
             }
         }
     }
+    
+    func resetDisplay() {
+        selectedAchievement1 = "Amazing"
+        selectedAchievement2 = "Amazing"
+        selectedAchievement3 = "Amazing"
+        division = Division()
+            
+        }
+    
 }
 
 
