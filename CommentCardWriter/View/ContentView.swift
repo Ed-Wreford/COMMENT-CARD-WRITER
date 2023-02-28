@@ -16,9 +16,11 @@ struct ContentView: View {
                 if selectedName >= division.students.count {
                     selectedName  = 0
                 }
+                if selectedName < 0 {
+                    selectedName = division.students.count - 1
+                }
             }
         }
-    
     
     var achievement1 = ["Amazing", "Good", "Average", "Bad"]
     @State private var selectedAchievement1 = "Amazing"
@@ -34,7 +36,7 @@ struct ContentView: View {
         
         NavigationView {
             VStack {
-                NavigationLink(destination: CommentCardView()) {Text("View Comment")}
+                NavigationLink(destination: CommentCardView(selectedAchievement1, selectedAchievement2, selectedAchievement3) {Text("View Comment")}
                 List {
                     Section(header: Text("Class Attainment")) {
                         Picker("Please choose a grade", selection: $selectedAchievement1) {
@@ -62,11 +64,11 @@ struct ContentView: View {
                                 .resizable()
                                 .scaledToFit()
                 }
-                .navigationTitle("\(division.students[0].displayStats())")
+                .navigationTitle("\(division.students[selectedName].displayStats())")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
-                        Button(action: { selectedName += 1
+                        Button(action: { selectedName -= 1
                             resetDisplay()
                             
                         }) {
@@ -74,13 +76,12 @@ struct ContentView: View {
                         }
                     }
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        Button(action: { selectedName -= 1
+                        Button(action: { selectedName += 1
                             resetDisplay() } ) {
                             Image(systemName: "arrow.forward")
                         }
                     }
                 }
-                Button("GENERATE COMMENT", action: {})
             }
         }
     }

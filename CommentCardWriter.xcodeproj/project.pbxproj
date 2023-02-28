@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5829641D2993A5AF00E12889 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5829641C2993A5AF00E12889 /* Student.swift */; };
+		5857731529AE13B600DC6198 /* TheGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857731429AE13B600DC6198 /* TheGenerator.swift */; };
 		58C7E33329A4D594008B87E9 /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7E33229A4D594008B87E9 /* Division.swift */; };
 		58D5082E299269DA00EE3A96 /* CommentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D5082D299269DA00EE3A96 /* CommentCardView.swift */; };
 		58D5082F299269DA00EE3A96 /* CommentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D5082D299269DA00EE3A96 /* CommentCardView.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		5829641C2993A5AF00E12889 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		5857731429AE13B600DC6198 /* TheGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheGenerator.swift; sourceTree = "<group>"; };
 		58C7E33229A4D594008B87E9 /* Division.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
 		58D5082D299269DA00EE3A96 /* CommentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardView.swift; sourceTree = "<group>"; };
 		58F392B229925B1D00965A6E /* CommentCardWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommentCardWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +151,7 @@
 			children = (
 				5829641C2993A5AF00E12889 /* Student.swift */,
 				58C7E33229A4D594008B87E9 /* Division.swift */,
+				5857731429AE13B600DC6198 /* TheGenerator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58F392B829925B1D00965A6E /* ContentView.swift in Sources */,
+				5857731529AE13B600DC6198 /* TheGenerator.swift in Sources */,
 				58D5082E299269DA00EE3A96 /* CommentCardView.swift in Sources */,
 				58C7E33329A4D594008B87E9 /* Division.swift in Sources */,
 				5829641D2993A5AF00E12889 /* Student.swift in Sources */,
